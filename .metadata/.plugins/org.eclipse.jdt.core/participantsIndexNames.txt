@@ -1,0 +1,33 @@
+INDEX VERSION 1.131
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2379299496.index
+\web.prac2a\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1652321159.index
+\web.demo4a\src
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1503706428.index
+\web.demo2a\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1236892888.index
+\web.prac2b\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\357074003.index
+\web.demoF\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3402172573.index
+\web.day2\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\951892517.index
+\jee.web.shoppee.demo1\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1366177387.index
+\web.demo1\src\main\resources
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\987824469.index
+\web.demo2b\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2924169823.index
+\jee.web.sessiondemo\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3729482028.index
+\web.prac2b\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\830391317.index
+\web.demoF\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1797710241.index
+\jee.web.shoppee.demo2\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4210441109.index
+\web.demo2b\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1769691857.index
+\web.demo2a\src\main\java
+C:\JEE Web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2479424078.index
+\web.day2\src\main\java

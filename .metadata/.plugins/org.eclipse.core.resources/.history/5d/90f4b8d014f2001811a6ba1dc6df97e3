@@ -1,0 +1,5 @@
+package web.demo.model;
+
+public class BookDetails {
+
+}

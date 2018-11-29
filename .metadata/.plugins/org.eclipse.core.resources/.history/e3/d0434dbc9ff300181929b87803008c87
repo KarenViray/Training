@@ -1,0 +1,52 @@
+<%@page import="com.demo.model.Product"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" isELIgnored="false"%>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+	
+	<a href = "./index.jsp">Back</a>	
+	
+	<table>
+	   <tr>
+	       <td>Id</td>
+	       <td>Name</td>
+	       <td>Description</td>
+	       <td>Price</td>
+	       <td>Action</td>
+	   </tr>
+	   <%
+	    List<Product> products = (List<Product>) request.getAttribute("products");
+	    for(Product productctr: products) {
+	   %>
+	        <tr>
+	           <td><%= productctr.getId() %></td>
+	           <td><%= productctr.getName() %></td>
+	           <td><%= productctr.getDesc() %></td>	
+	           <td><%= productctr.getPrice() %></td>
+	            <td>
+	           	<select>
+	           		<option value="1">1</option>
+	           		<option value="2">2</option>
+	           		<option value="3">3</option>	           		
+	            </select>		
+	           </td>
+	           <td>
+	           		<form action="./shopping-cart" method="GET">
+	           			<input type="hidden" name="pid" value="<%= productctr.getId() %>">
+	           			<input type="hidden" name="name" value="<%= productctr.getName() %>">
+	           			<input type="hidden" name="desc" value="<%= productctr.getDesc() %>">
+	           			<input type="hidden" name="price" value="<%= productctr.getPrice() %>">
+	           			<input type="hidden" name="action" value="add">
+	           			<input type="submit" value="Add to cart">
+	           		</form>
+	           </td>	   
+	       </tr>
+	   <%
+	    }
+	   %>
+	</table>
+</body>
+</html>

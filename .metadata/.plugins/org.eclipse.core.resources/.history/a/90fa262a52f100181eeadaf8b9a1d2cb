@@ -1,0 +1,5 @@
+package web.acct.earnestbank.dao;
+
+public class AccountHolderTransDAO {
+
+}

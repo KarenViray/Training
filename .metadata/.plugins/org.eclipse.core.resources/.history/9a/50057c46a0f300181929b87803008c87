@@ -1,0 +1,61 @@
+package com.demo.model;
+
+import java.util.List;
+
+import javax.servlet.annotation.WebServlet;
+
+
+public class ShoppingCart {
+	private List<Cart> items;
+	private int totalQty;
+	private int totalPrice;
+	
+	
+	public  ShoppingCart()
+	{		
+	}
+	
+
+	public ShoppingCart(List<Cart> items, int totalQty, int totalPrice) {
+		super();
+		this.items = items;
+		this.totalQty = totalQty;
+		this.totalPrice = totalPrice;
+	}
+	
+	public void addToCart(Cart item) {	
+		boolean isAdded = false;
+		Cart newItem = null;
+		for(int i = 0; i < items.size(); i++) {
+			if(items.get(i).getId().equals(item.getId())) {
+				newItem = items.get(i);
+				newItem.setQty(newItem.getQty() + 1);
+				newItem.setTotal(newItem.getQty() * newItem.getPrice());
+				items.set(i, newItem);
+				isAdded = true;
+				break;
+			}
+		}
+		if(!isAdded) {
+			items.add(item);
+		}
+		totalQty += 1;
+		totalPrice += item.getPrice();	
+	}
+	
+	
+	public List<Cart> getItems() {
+		return items;
+	}
+
+	public int getTotalQty() {
+		return totalQty;
+	}
+
+	public int getTotalPrice() {
+		return totalPrice;
+	}
+	
+	
+	
+}	

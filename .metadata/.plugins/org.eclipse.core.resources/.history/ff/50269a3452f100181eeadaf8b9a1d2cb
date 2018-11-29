@@ -1,0 +1,5 @@
+package com.acct.earnestbank.models;
+
+public class AccountHolderTrans {
+
+}

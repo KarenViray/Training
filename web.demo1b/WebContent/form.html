@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="./form-processor" method="POST">
+		<label>Full Name</label>
+		<input type="text" name="fullName">
+		<br/>
+		<label>Country</label>
+		<select name="country">
+			<option value="JP">Japan</option>
+			<option value="SG">Singapore</option>
+			<option value="CA">Canada</option>
+		</select>
+		<br/>
+		<label>Gender</label>
+		Male <input type="radio" value="male" name="gender">
+		Female <input type="radio" value="female" name="gender">
+		<br/>
+		<label>Programming Languages</label>
+		C# <input type="checkbox" value="csharp" name="language">
+		Java <input type="checkbox" value="java" name="language">
+		Python <input type="checkbox" value="python" name="language">
+		<br/>
+		<label>Comment</label>
+		<textarea rows="4" cols="15" name="comment"></textarea>
+		<br/>
+		<input type="submit" value="submit">
+		<input type="reset" value="clear">			
+	</form>
+</body>
+</html>

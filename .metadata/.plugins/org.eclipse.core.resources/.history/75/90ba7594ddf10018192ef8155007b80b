@@ -1,0 +1,33 @@
+package com.demo.earnestbank.models.Registration;
+
+public class Registration {
+	private int registrationId;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private float income;
+	private String phone;
+	
+	public Registration() {
+	}
+
+	public Registration(int registrationId, String firstName, String lastName, String address, float income, String phone) {
+		this.registrationId = registrationId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.income = income;
+		this.phone = phone;
+	}
+	
+	public int getRegistrationId() {
+		return registrationId;
+	}
+
+	public void setRegistrationId(int registrationId) {
+		this.registrationId = registrationId;
+	}
+	
+	
+}
+

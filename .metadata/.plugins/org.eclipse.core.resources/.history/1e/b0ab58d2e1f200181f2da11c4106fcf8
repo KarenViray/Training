@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Toy Details</title>
+</head>
+<body>
+<form action="" method="post">
+			<p>
+			    <label>TID</label>
+				<input type="text" name="id">				
+			</p>
+			<p>
+				<label>NAME</label>
+				<input type="text" name="name">				
+			</p>
+			<p>
+				<label>DESCRIPTION</label>
+				<input type="text" name="desc">				
+			</p>
+			<p>
+				<label>PRICE</label>
+				<input type="text" name="price">				
+			</p>
+			<p>				
+				<input type="submit" value="Login">
+			</p>
+		</form>
+
+</body>
+</html>

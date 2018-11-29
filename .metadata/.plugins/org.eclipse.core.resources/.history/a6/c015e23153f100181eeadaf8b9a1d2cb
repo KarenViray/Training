@@ -1,0 +1,20 @@
+package com.acct.earnestbank.models;
+
+import java.util.Date;
+
+public class AccountHolderTrans {
+	private String Id;
+	private Date dateOfTrans;
+	private float transAmt;
+	
+	public AccountHolderTrans() {
+	}
+
+	public AccountHolderTrans(String id, Date dateOfTrans, float transAmt) {
+		this.id = id;
+		this.registrationId = registrationId;
+		this.balance = balance;
+	}
+	
+	
+}

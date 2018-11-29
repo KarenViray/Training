@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FirstFilter.java&apos; to &apos;web.filter2/src/web.filter2&apos;&#x0D;&#x0A;- Original project: &apos;web.filter2&apos;&#x0D;&#x0A;- Destination element: &apos;web.filter2/src/web.filter2&apos;&#x0D;&#x0A;- Original element: &apos;web.filter2.FirstFilter.java&apos;" description="Copy compilation unit" destination="/src&lt;web.filter2" element1="/src&lt;web.filter2{FirstFilter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1543453991025" units="1" version="1.0"/>
+</session>

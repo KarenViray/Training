@@ -1,0 +1,20 @@
+<%@page language="java" %>
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
+<%!
+	public String getCurrentDate() {
+		DateFormat dateFormatter = new SimpleDateFormat("MM/dd/yyyy");
+		String currentDate = dateFormatter.format(new Date());
+		return currentDate;
+	}
+%>
+
+<html>
+<body>
+<h2>Java Web Project</h2>
+<%=currentDate %>
+</br>
+Formatted Date <%= getCurrentDate() %>>
+</body>
+</html>

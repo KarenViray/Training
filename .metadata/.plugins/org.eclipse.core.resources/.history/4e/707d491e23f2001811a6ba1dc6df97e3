@@ -1,0 +1,36 @@
+<%@page import="com.demo.model.Product"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" isELIgnored="false"%>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+	
+	<a href = "./product-toys">Toy Details          </a>	
+	<a href = "./product-flower">Flower Details        </a>	
+	<a href = "./product-book">Book Details      </a>	
+	<table>
+	   <tr>
+	       <td>Id</td>
+	       <td>Name</td>
+	       <td>Description</td>
+	       <td>Price</td>
+	   </tr>
+	   <%
+	    List<Product> products = (List<Product>) request.getAttribute("products");
+	    for(Product productctr: products) {
+	   %>
+	        <tr>
+	           <td><%= productctr.getId() %></td>
+	           <td><%= productctr.getName() %></td>
+	           <td><%= productctr.getDesc() %></td>
+	           <td><%= productctr.getAuthor() %></td>
+	           <td><%= productctr.getPrice() %></td>
+	       </tr>
+	   <%
+	    }
+	   %>
+	</table>
+</body>
+</html>

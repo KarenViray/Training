@@ -1,0 +1,5 @@
+package com.demo.earnesbank.dao;
+
+public class RegistrationDAO {
+
+}

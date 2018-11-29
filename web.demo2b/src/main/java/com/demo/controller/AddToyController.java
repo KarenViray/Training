@@ -1,0 +1,62 @@
+package com.demo.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.demo.dao.ToyDetailsDAO;
+import com.demo.model.Product;
+import com.demo.util.DatabaseConfig;
+
+
+@WebServlet("/add-toy")
+public class AddToyController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ToyDetailsDAO toyDetailsDAO;
+	private DatabaseConfig databaseConfig;
+	
+	public void init() throws ServletException {
+		this.databaseConfig = new DatabaseConfig();
+		this.toyDetailsDAO = new ToyDetailsDAO(databaseConfig.getUrl(), 
+		databaseConfig.getUsername(), 
+		databaseConfig.getPassword());
+	}
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		Product product = toBean(request);
+		
+		RequestDispatcher dispatcher = null;
+		String gotoPage = "/product-toys";		
+		//if(!product.isFormValid()) {
+			// login.jsp
+		//	gotoPage = "/addToyView.jsp";			
+		//	request.setAttribute("product", product);		
+		//} else {
+			toyDetailsDAO.addToy(product);
+		//}
+		
+		dispatcher = request.getRequestDispatcher(gotoPage);
+		dispatcher.forward(request, response);
+		
+				
+}
+
+	private Product toBean(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		Product product = new Product();
+		
+		product.setId(request.getParameter("id"));
+		product.setName(request.getParameter("name"));
+		product.setDesc(request.getParameter("desc"));
+		//product.setPrice(request.getParameter("price"));
+		
+		return product;
+	}
+
+}

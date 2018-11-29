@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Webshoppee</title>
+</head>
+<body>
+	<h2>Product Catalog</h2><hr/>
+	<ul>
+	<li><a href = "./product-toys">Toy Details</a></li>
+	<li><a href = "./product-flower">Flower Details</a></li>
+	<li><a href = "./product-book">Book Details</a></li>
+	</ul>
+</body>
+</html>
+
